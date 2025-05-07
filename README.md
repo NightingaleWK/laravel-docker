@@ -9,4 +9,4 @@
 
 ## About
 
-本项目是对 [https://yeasy.gitbook.io/docker_practice/ci/actions](https://yeasy.gitbook.io/docker_practice/ci/actions)的实战研究，探索 laravel 开发完毕后，容器化部署的相关实验。
+本项目是对 [https://yeasy.gitbook.io/docker_practice/ci/actions](https://yeasy.gitbook.io/docker_practice/ci/actions) 的实战研究，探索 laravel 开发完毕后，容器化部署的相关实验。
