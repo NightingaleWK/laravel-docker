@@ -1,0 +1,27 @@
+services:
+  laravel:
+    build:
+      context: .
+      target: laravel
+    container_name: laravel
+    networks:
+      - laravel
+    volumes:
+      - ./database/database.sqlite:/app/database/database.sqlite
+      - ./storage/app/public:/app/storage/app/public
+
+  nginx:
+    build:
+      context: .
+      target: nginx
+    container_name: nginx
+    depends_on:
+      - laravel
+    ports:
+      - "8080:80"
+    networks:
+      - laravel
+
+networks:
+  laravel:
+    driver: bridge
